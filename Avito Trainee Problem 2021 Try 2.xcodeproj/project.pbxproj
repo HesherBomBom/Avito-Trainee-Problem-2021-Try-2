@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		83C6867E29097377003F8DF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6867D29097377003F8DF6 /* AppDelegate.swift */; };
 		83C6868029097377003F8DF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6867F29097377003F8DF6 /* SceneDelegate.swift */; };
-		83C6868229097377003F8DF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6868129097377003F8DF6 /* ViewController.swift */; };
 		83C6868529097377003F8DF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83C6868329097377003F8DF6 /* Main.storyboard */; };
 		83C6868729097379003F8DF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C6868629097379003F8DF6 /* Assets.xcassets */; };
 		83C6868A29097379003F8DF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83C6868829097379003F8DF6 /* LaunchScreen.storyboard */; };
+		83C68692290973EE003F8DF6 /* ApiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C68691290973EE003F8DF6 /* ApiData.swift */; };
+		83C686942909741E003F8DF6 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C686932909741E003F8DF6 /* Api.swift */; };
+		83C68696290974D8003F8DF6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C68695290974D8003F8DF6 /* NetworkManager.swift */; };
+		83C6869829098389003F8DF6 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6869729098389003F8DF6 /* TableViewController.swift */; };
+		83C6869A29098490003F8DF6 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6869929098490003F8DF6 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		83C6867A29097377003F8DF6 /* Avito Trainee Problem 2021 Try 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Avito Trainee Problem 2021 Try 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C6867D29097377003F8DF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83C6867F29097377003F8DF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		83C6868129097377003F8DF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		83C6868429097377003F8DF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83C6868629097379003F8DF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83C6868929097379003F8DF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83C6868B29097379003F8DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83C68691290973EE003F8DF6 /* ApiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiData.swift; sourceTree = "<group>"; };
+		83C686932909741E003F8DF6 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		83C68695290974D8003F8DF6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		83C6869729098389003F8DF6 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		83C6869929098490003F8DF6 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +64,17 @@
 		83C6867C29097377003F8DF6 /* Avito Trainee Problem 2021 Try 2 */ = {
 			isa = PBXGroup;
 			children = (
+				83C68691290973EE003F8DF6 /* ApiData.swift */,
 				83C6867D29097377003F8DF6 /* AppDelegate.swift */,
 				83C6867F29097377003F8DF6 /* SceneDelegate.swift */,
-				83C6868129097377003F8DF6 /* ViewController.swift */,
 				83C6868329097377003F8DF6 /* Main.storyboard */,
+				83C6869929098490003F8DF6 /* CustomTableViewCell.swift */,
+				83C6869729098389003F8DF6 /* TableViewController.swift */,
 				83C6868629097379003F8DF6 /* Assets.xcassets */,
 				83C6868829097379003F8DF6 /* LaunchScreen.storyboard */,
 				83C6868B29097379003F8DF6 /* Info.plist */,
+				83C686932909741E003F8DF6 /* Api.swift */,
+				83C68695290974D8003F8DF6 /* NetworkManager.swift */,
 			);
 			path = "Avito Trainee Problem 2021 Try 2";
 			sourceTree = "<group>";
@@ -138,8 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83C6868229097377003F8DF6 /* ViewController.swift in Sources */,
+				83C68696290974D8003F8DF6 /* NetworkManager.swift in Sources */,
+				83C6869829098389003F8DF6 /* TableViewController.swift in Sources */,
+				83C6869A29098490003F8DF6 /* CustomTableViewCell.swift in Sources */,
+				83C68692290973EE003F8DF6 /* ApiData.swift in Sources */,
 				83C6867E29097377003F8DF6 /* AppDelegate.swift in Sources */,
+				83C686942909741E003F8DF6 /* Api.swift in Sources */,
 				83C6868029097377003F8DF6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,9 +318,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "pzykov.Avito-Trainee-Problem-2021-Try-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +349,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "pzykov.Avito-Trainee-Problem-2021-Try-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
