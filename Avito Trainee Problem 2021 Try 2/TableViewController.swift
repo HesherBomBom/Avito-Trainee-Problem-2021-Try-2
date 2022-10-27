@@ -27,6 +27,7 @@ class TableViewController: UITableViewController {
         DispatchQueue.main.async {
             self.companyName = api.companyName
             self.employees = api.employees
+            self.employees.sort { $0.name < $1.name }
             print("company name is \(self.companyName)")
             print("\(self.employees.count) items here")
             self.tableView.reloadData()
