@@ -23,8 +23,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="WBc-tf-nw5">
-                                            <rect key="frame" x="20.000000000000007" y="17.000000000000007" width="111.66666666666667" height="96.666666666666671"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="WBc-tf-nw5">
+                                            <rect key="frame" x="20" y="17.000000000000007" width="112" height="96.666666666666686"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jtu-QY-PU0">
                                                     <rect key="frame" x="0.0" y="0.0" width="89.333333333333329" height="42"/>
@@ -47,10 +47,17 @@
                                             </subviews>
                                         </stackView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="WBc-tf-nw5" firstAttribute="top" secondItem="it3-r6-wjx" secondAttribute="top" constant="17.000000000000007" id="2sY-MD-Idm"/>
+                                        <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="WBc-tf-nw5" secondAttribute="trailing" constant="243" id="8de-UA-x5p"/>
+                                        <constraint firstAttribute="bottom" secondItem="WBc-tf-nw5" secondAttribute="bottom" constant="16.333333333333314" id="V9r-Oi-XXQ"/>
+                                        <constraint firstItem="WBc-tf-nw5" firstAttribute="leading" secondItem="it3-r6-wjx" secondAttribute="leading" constant="20.000000000000007" id="w8r-eI-cRo"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="Jtu-QY-PU0" id="2M0-PX-HnD"/>
                                     <outlet property="phoneNumberLabel" destination="CRW-uQ-sHI" id="thI-ck-r62"/>
+                                    <outlet property="skillsLabel" destination="J0y-1Y-PhF" id="RyN-89-odj"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

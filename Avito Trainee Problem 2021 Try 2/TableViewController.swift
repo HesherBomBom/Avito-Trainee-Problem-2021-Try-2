@@ -29,8 +29,8 @@ class TableViewController: UITableViewController {
             self.employees = api.employees
             print("company name is \(self.companyName)")
             print("\(self.employees.count) items here")
+            self.tableView.reloadData()
         }
-        
     }
 
     // MARK: - Table view data source
@@ -42,16 +42,18 @@ class TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        print("tableview number of row in section is \(employees.count)")
         return employees.isEmpty ? 0 : employees.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print("table view cell for row at \(indexPath)")
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomTableViewCell
         let employee = employees[indexPath.row]
 
         cell.nameLabel.text = employee.name
         cell.phoneNumberLabel.text = employee.phoneNumber
-        cell.skillsLabel.text = employee.skills.joined()
+        cell.skillsLabel.text = employee.skills.joined(separator: ", ")
 
         return cell
     }
